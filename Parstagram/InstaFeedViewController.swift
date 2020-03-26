@@ -10,7 +10,22 @@ import UIKit
 import Parse
 
 class InstaFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]//gets it from the Parse server
+        let comment = PFObject(className: "Comments")
+        comment["text"] = "This is a randomc comment"
+        comment["posts"] = post
+        comment["author"] = PFUser.current()!
+        
+        post.add(comment, forKey: "comments")//array of comments
+        post.saveInBackground { (success, error) in
+            if success{
+                print("comment saved")
+            } else {
+                print("error saving comment")
+            }
+        }
+    }
     
     @IBAction func logout(_ sender: Any) {
         PFUser.logOut()
