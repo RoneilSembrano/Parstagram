@@ -11,7 +11,7 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+  var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://quiet-escarpment-52431.herokuapp.com//parse"
             })
         )
+
         return true
     }
 

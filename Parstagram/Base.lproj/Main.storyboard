@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +140,11 @@
                         <viewLayoutGuide key="safeArea" id="UkA-b0-e5n"/>
                     </view>
                     <navigationItem key="navigationItem" id="9iS-9a-WP4">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="cVF-h1-5nB">
+                            <connections>
+                                <action selector="logout:" destination="abi-YX-SWF" id="h01-uv-GRS"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="NUr-2i-0GP">
                             <connections>
                                 <segue destination="UVh-da-yoa" kind="presentation" id="Q5N-CF-8ML"/>
@@ -205,7 +210,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pbE-9u-ky0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M1S-sc-BqT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="M1S-sc-BqT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UU0-bH-Jdk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
