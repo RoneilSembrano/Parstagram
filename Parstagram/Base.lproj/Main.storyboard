@@ -96,20 +96,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J51-0q-ndh">
-                                                    <rect key="frame" x="5" y="8" width="398" height="391"/>
+                                                    <rect key="frame" x="5" y="8" width="398" height="387.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="398" id="AsT-iz-vhj"/>
                                                         <constraint firstAttribute="height" constant="391" id="lah-fj-cSc"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ron" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-bI-0oj">
-                                                    <rect key="frame" x="4" y="407" width="30" height="20.5"/>
+                                                    <rect key="frame" x="4" y="403.5" width="30" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wow i love photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWp-Qp-3iR">
-                                                    <rect key="frame" x="42" y="407" width="136" height="20.5"/>
+                                                    <rect key="frame" x="42" y="403.5" width="136" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -117,13 +117,19 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="baseline" secondItem="Zha-bI-0oj" secondAttribute="baseline" id="0lY-Q4-6Wo"/>
+                                                <constraint firstAttribute="bottom" secondItem="DWp-Qp-3iR" secondAttribute="bottom" constant="5" id="COw-EP-FQ4"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="firstBaseline" secondItem="Zha-bI-0oj" secondAttribute="baseline" id="Cbk-dG-MDr"/>
                                                 <constraint firstItem="J51-0q-ndh" firstAttribute="top" secondItem="q8y-2O-9jr" secondAttribute="topMargin" constant="-3" id="RFf-fw-v6j"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="centerY" secondItem="Zha-bI-0oj" secondAttribute="centerY" id="Ucc-z2-Waa"/>
+                                                <constraint firstItem="Zha-bI-0oj" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="VY3-Sv-xNJ"/>
+                                                <constraint firstItem="DWp-Qp-3iR" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="ZDL-aX-Vot"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zha-bI-0oj" secondAttribute="bottom" constant="5" id="ZMu-Wp-d38"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="leading" secondItem="Zha-bI-0oj" secondAttribute="trailing" constant="8" id="bbE-eG-hXm"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zha-bI-0oj" secondAttribute="bottom" constant="5" id="cCq-NW-xJM"/>
                                                 <constraint firstItem="Zha-bI-0oj" firstAttribute="leading" secondItem="q8y-2O-9jr" secondAttribute="leadingMargin" constant="-12" id="ese-G5-N6i"/>
                                                 <constraint firstItem="Zha-bI-0oj" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="hgx-6x-Fhw"/>
                                                 <constraint firstItem="J51-0q-ndh" firstAttribute="leading" secondItem="q8y-2O-9jr" secondAttribute="leading" constant="5" id="htJ-Sc-rRw"/>
+                                                <constraint firstAttribute="bottom" secondItem="DWp-Qp-3iR" secondAttribute="bottom" constant="5" id="oLx-B3-OXQ"/>
                                                 <constraint firstItem="J51-0q-ndh" firstAttribute="centerX" secondItem="q8y-2O-9jr" secondAttribute="centerX" id="zcP-e2-D2Q"/>
                                             </constraints>
                                         </tableViewCellContentView>

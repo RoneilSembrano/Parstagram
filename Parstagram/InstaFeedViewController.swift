@@ -49,7 +49,10 @@ class InstaFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         feedTableView.delegate = self
         feedTableView.dataSource = self
         
-        feedTableView.rowHeight = 500
+        //feedTableView.rowHeight = 300
+        //used to work with the auto layout // put necessary constraints on name and comment label shift k
+        feedTableView.rowHeight = UITableView.automaticDimension
+        feedTableView.estimatedRowHeight = 200
         
 
 
@@ -86,7 +89,7 @@ class InstaFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let post = posts[indexPath.section]
+        let post = posts[indexPath.section]//////
         let comments = (post["comments"] as? [PFObject]) ?? []
 
         if indexPath.row == 0{
