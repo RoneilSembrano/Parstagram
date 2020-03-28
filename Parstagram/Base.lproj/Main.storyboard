@@ -103,13 +103,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ron" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-bI-0oj">
-                                                    <rect key="frame" x="4" y="403.5" width="30" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="24" y="403.5" width="32" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wow i love photos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWp-Qp-3iR">
-                                                    <rect key="frame" x="42" y="403.5" width="136" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWp-Qp-3iR">
+                                                    <rect key="frame" x="64" y="403.5" width="140.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -120,13 +120,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="DWp-Qp-3iR" secondAttribute="bottom" constant="5" id="COw-EP-FQ4"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="firstBaseline" secondItem="Zha-bI-0oj" secondAttribute="baseline" id="Cbk-dG-MDr"/>
                                                 <constraint firstItem="J51-0q-ndh" firstAttribute="top" secondItem="q8y-2O-9jr" secondAttribute="topMargin" constant="-3" id="RFf-fw-v6j"/>
-                                                <constraint firstItem="DWp-Qp-3iR" firstAttribute="centerY" secondItem="Zha-bI-0oj" secondAttribute="centerY" id="Ucc-z2-Waa"/>
                                                 <constraint firstItem="Zha-bI-0oj" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="VY3-Sv-xNJ"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="ZDL-aX-Vot"/>
                                                 <constraint firstAttribute="bottom" secondItem="Zha-bI-0oj" secondAttribute="bottom" constant="5" id="ZMu-Wp-d38"/>
                                                 <constraint firstItem="DWp-Qp-3iR" firstAttribute="leading" secondItem="Zha-bI-0oj" secondAttribute="trailing" constant="8" id="bbE-eG-hXm"/>
                                                 <constraint firstAttribute="bottom" secondItem="Zha-bI-0oj" secondAttribute="bottom" constant="5" id="cCq-NW-xJM"/>
-                                                <constraint firstItem="Zha-bI-0oj" firstAttribute="leading" secondItem="q8y-2O-9jr" secondAttribute="leadingMargin" constant="-12" id="ese-G5-N6i"/>
+                                                <constraint firstItem="Zha-bI-0oj" firstAttribute="leading" secondItem="q8y-2O-9jr" secondAttribute="leadingMargin" constant="8" id="ese-G5-N6i"/>
                                                 <constraint firstItem="Zha-bI-0oj" firstAttribute="top" secondItem="J51-0q-ndh" secondAttribute="bottom" constant="8" id="hgx-6x-Fhw"/>
                                                 <constraint firstItem="J51-0q-ndh" firstAttribute="leading" secondItem="q8y-2O-9jr" secondAttribute="leading" constant="5" id="htJ-Sc-rRw"/>
                                                 <constraint firstAttribute="bottom" secondItem="DWp-Qp-3iR" secondAttribute="bottom" constant="5" id="oLx-B3-OXQ"/>
@@ -152,7 +151,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbC-w1-0RF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a comment" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbC-w1-0RF">
                                                     <rect key="frame" x="67" y="0.0" width="139.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -163,10 +162,10 @@
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="baseline" secondItem="Bpg-j6-QDN" secondAttribute="baseline" id="5hn-uf-aLh"/>
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="leading" secondItem="Bpg-j6-QDN" secondAttribute="trailing" constant="8" id="MkN-rG-UcO"/>
                                                 <constraint firstItem="Bpg-j6-QDN" firstAttribute="leading" secondItem="3m3-fm-bgS" secondAttribute="leadingMargin" constant="8" id="cBf-BL-Xci"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Bpg-j6-QDN" secondAttribute="bottom" constant="16" id="psg-Tu-DPO"/>
+                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="top" secondItem="3m3-fm-bgS" secondAttribute="top" constant="4" id="pPh-IG-JKu"/>
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="firstBaseline" secondItem="Bpg-j6-QDN" secondAttribute="firstBaseline" id="r2k-5J-t9S"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="HbC-w1-0RF" secondAttribute="bottom" constant="16" id="wOu-0p-lCw"/>
-                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="top" secondItem="3m3-fm-bgS" secondAttribute="topMargin" constant="8" id="wyA-aN-bwC"/>
+                                                <constraint firstAttribute="trailing" secondItem="HbC-w1-0RF" secondAttribute="trailing" constant="10" id="rm2-iC-ieg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HbC-w1-0RF" secondAttribute="bottom" constant="5" id="wOu-0p-lCw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
