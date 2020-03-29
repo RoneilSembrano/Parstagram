@@ -10,12 +10,8 @@ import Parse
 
 class LoginViewController: UIViewController {
 
-
     @IBOutlet weak var usernameField: UITextField!
-    
-    
     @IBOutlet weak var passwordField: UITextField!
-    
     
     @IBAction func onsignIn(_ sender: Any) {
         let username = usernameField.text!
@@ -33,13 +29,11 @@ class LoginViewController: UIViewController {
         let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
-        
-
+         
         user.signUpInBackground { (success, error) in
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-               // print("Error: \(error?.localizedDescription)")
                 print("Error.....%@", error?.localizedDescription)
             }
         }

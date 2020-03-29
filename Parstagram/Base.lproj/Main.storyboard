@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
-                                    <action selector="onsignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QtA-Qh-lnd"/>
+                                    <action selector="onsignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJI-a5-xhv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-A8-Z9s">
@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <action selector="onsignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yV9-zD-Prh"/>
+                                    <action selector="onsignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w35-Gc-jOm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,8 +66,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="wxG-Q2-Vkq" id="Dof-hT-Z5Z"/>
-                        <outlet property="usernameField" destination="oFJ-wz-8Vp" id="SpQ-st-BHh"/>
+                        <outlet property="passwordField" destination="wxG-Q2-Vkq" id="dGd-BX-7SS"/>
+                        <outlet property="usernameField" destination="oFJ-wz-8Vp" id="m5m-6x-6k6"/>
                         <segue destination="M1S-sc-BqT" kind="presentation" identifier="loginSegue" id="OV7-yU-Xh7"/>
                     </connections>
                 </viewController>
@@ -133,7 +133,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="captionLabel" destination="DWp-Qp-3iR" id="sSG-Ey-Pcd"/>
+                                            <outlet property="captionLabel" destination="DWp-Qp-3iR" id="xV8-ZW-7dc"/>
                                             <outlet property="photoView" destination="J51-0q-ndh" id="7dZ-T2-4jG"/>
                                             <outlet property="usernameLabel" destination="Zha-bI-0oj" id="snN-S1-WAG"/>
                                         </connections>
@@ -161,11 +161,11 @@
                                             <constraints>
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="baseline" secondItem="Bpg-j6-QDN" secondAttribute="baseline" id="5hn-uf-aLh"/>
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="leading" secondItem="Bpg-j6-QDN" secondAttribute="trailing" constant="8" id="MkN-rG-UcO"/>
-                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="leading" secondItem="3m3-fm-bgS" secondAttribute="leadingMargin" constant="8" id="cBf-BL-Xci"/>
-                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="top" secondItem="3m3-fm-bgS" secondAttribute="top" constant="4" id="pPh-IG-JKu"/>
+                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="leading" secondItem="3m3-fm-bgS" secondAttribute="leadingMargin" constant="-11" id="cBf-BL-Xci"/>
+                                                <constraint firstItem="Bpg-j6-QDN" firstAttribute="top" secondItem="3m3-fm-bgS" secondAttribute="top" id="pPh-IG-JKu"/>
                                                 <constraint firstItem="HbC-w1-0RF" firstAttribute="firstBaseline" secondItem="Bpg-j6-QDN" secondAttribute="firstBaseline" id="r2k-5J-t9S"/>
-                                                <constraint firstAttribute="trailing" secondItem="HbC-w1-0RF" secondAttribute="trailing" constant="10" id="rm2-iC-ieg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="HbC-w1-0RF" secondAttribute="bottom" constant="5" id="wOu-0p-lCw"/>
+                                                <constraint firstAttribute="trailing" secondItem="HbC-w1-0RF" secondAttribute="trailing" constant="207.5" id="rm2-iC-ieg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HbC-w1-0RF" secondAttribute="bottom" constant="-9" id="wOu-0p-lCw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

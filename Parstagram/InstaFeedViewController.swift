@@ -12,12 +12,13 @@ import Parse
 class InstaFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.row]//gets it from the Parse server
+       // print("row is..........%@", indexPath.row)
         let comment = PFObject(className: "Comments")
-        comment["text"] = "This is a randomc comment"
-        comment["posts"] = post
+        comment["text"] = "Great photo!"
+        comment["post"] = post
         comment["author"] = PFUser.current()!
         
-        post.add(comment, forKey: "comments")//array of comments
+        post.add(comment, forKey: "comments")//array of comments, add this comment to the array
         post.saveInBackground { (success, error) in
             if success{
                 print("comment saved")
@@ -95,17 +96,20 @@ class InstaFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         if indexPath.row == 0{
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         
-        let user = post["author"] as! PFUser
-        cell.usernameLabel.text = user.username
+        
+            let user = post["author"] as? PFUser//added ? for it to stop crashing
+            cell.usernameLabel.text = user?.username!
         cell.captionLabel.text = (post["caption"] as! String)
         
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
+       
         cell.photoView.af_setImage(withURL: url)
-            return cell
+            
+        return cell
 
-        }else{
+        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
             
             let comment = comments[indexPath.row - 1]
